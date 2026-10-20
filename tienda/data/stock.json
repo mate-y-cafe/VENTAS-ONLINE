@@ -1,0 +1,15 @@
+{
+  "_nota": "EJEMPLO: no se descuenta. Una clave por id de producto y de opción del armador.",
+  "stock": {
+    "mate-algarrobo": 10,
+    "mate-calabaza": 10,
+    "mate-torpedo-calabaza": 10,
+    "yerba-organica-suave": 20,
+    "yerba-palo-tradicional": 20,
+    "yerba-serranas": 20,
+    "acc-termo": 10,
+    "acc-bombilla-alpaca": 15,
+    "bombilla-alpaca": 15,
+    "bombilla-acero": 15
+  }
+}

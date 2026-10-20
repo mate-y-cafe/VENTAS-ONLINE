@@ -1,0 +1,8 @@
+{
+  "name": "ventas-online-mate-cafe",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/pedido.test.js test/firma.test.js && node --test tienda/test/precios.test.js tienda/test/stock.test.js"
+  }
+}

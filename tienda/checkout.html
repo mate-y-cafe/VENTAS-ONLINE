@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar compra | MATE & CAFÉ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="../index.html">MATE & CAFÉ</a>
+  <a href="carrito.html">Volver al carrito</a>
+</header>
+
+<main class="wrap">
+  <h1>Finalizar compra</h1>
+
+  <div class="checkout-grid">
+    <form id="form" class="card" novalidate>
+      <h2 style="font-size:1.1rem">Tus datos</h2>
+
+      <label class="campo" for="nombre">Nombre y apellido</label>
+      <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+
+      <label class="campo" for="telefono">Teléfono (para coordinar)</label>
+      <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+
+      <label class="campo" for="email">Email (opcional)</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+
+      <h2 style="font-size:1.1rem; margin-top:1.25rem">Entrega</h2>
+      <div class="opciones">
+        <label class="opcion"><input type="radio" name="entrega" value="envio"> Envío a domicilio</label>
+        <label class="opcion"><input type="radio" name="entrega" value="retiro"> Retiro en el local</label>
+      </div>
+      <div id="bloque-direccion" class="oculto">
+        <label class="campo" for="direccion">Dirección de envío</label>
+        <input type="text" id="direccion" name="direccion" autocomplete="street-address">
+      </div>
+
+      <h2 style="font-size:1.1rem; margin-top:1.25rem">Forma de pago</h2>
+      <div class="opciones">
+        <label class="opcion"><input type="radio" name="pago" value="mercadopago" checked> Mercado Pago (tarjeta, débito o dinero en cuenta)</label>
+        <label class="opcion"><input type="radio" name="pago" value="transferencia"> Transferencia (10 % de descuento sobre productos)</label>
+        <label class="opcion"><input type="radio" name="pago" value="whatsapp"> Coordinar por WhatsApp</label>
+      </div>
+
+      <p class="error oculto" id="error"></p>
+      <button type="submit" class="btn full" id="enviar" style="margin-top:1rem">Continuar</button>
+    </form>
+
+    <aside>
+      <div class="card resumen">
+        <h2 style="font-size:1.1rem">Tu pedido</h2>
+        <div id="resumen-lineas"></div>
+        <dl style="margin-top:.75rem">
+          <dt>Subtotal</dt><dd id="r-subtotal">…</dd>
+          <dt>Descuento</dt><dd id="r-descuento">$0</dd>
+          <dt>Envío</dt><dd id="r-envio">…</dd>
+          <dt class="total">Total</dt><dd class="total" id="r-total">…</dd>
+        </dl>
+      </div>
+
+      <div id="instrucciones-transferencia" class="card oculto">
+        <h2 style="font-size:1.1rem">Datos para transferir</h2>
+        <p>Alias: <strong id="alias"></strong></p>
+        <p>Monto: <strong id="monto"></strong></p>
+        <p class="nota">Cuando hagas la transferencia, mandanos el comprobante por WhatsApp para confirmar tu pedido.</p>
+        <a class="btn full" id="wa-transferencia" target="_blank" rel="noopener">Enviar comprobante por WhatsApp</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script type="module" src="js/checkout.js"></script>
+</body>
+</html>

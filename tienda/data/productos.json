@@ -1,0 +1,11 @@
+{
+  "_nota": "PROVISORIO: datos tomados de index.html. Reemplazar por el catálogo real de la etapa 1.",
+  "productos": [
+    { "id": "mate-algarrobo", "nombre": "Mate Imperial de Algarrobo", "categoria": "Mates", "precio": 18500, "activo": true },
+    { "id": "mate-calabaza", "nombre": "Mate Calabaza Curado", "categoria": "Mates", "precio": 9800, "activo": true },
+    { "id": "yerba-organica-suave", "nombre": "Yerba Orgánica Suave", "categoria": "Yerbas", "precio": 4200, "activo": true },
+    { "id": "yerba-palo-tradicional", "nombre": "Yerba con Palo Tradicional", "categoria": "Yerbas", "precio": 3600, "activo": true },
+    { "id": "acc-termo", "nombre": "Termo Acero Inoxidable 1L", "categoria": "Termos", "precio": 22900, "activo": true },
+    { "id": "acc-bombilla-alpaca", "nombre": "Bombilla de Alpaca Clásica", "categoria": "Bombillas", "precio": 7300, "activo": true }
+  ]
+}

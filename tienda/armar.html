@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armá tu mate | MATE & CAFÉ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="index.html">← Tienda</a>
+  <a href="carrito.html">🛒 Carrito</a>
+</header>
+
+<main class="wrap">
+  <h1>Armá tu mate</h1>
+  <p class="nota">Elegí cada parte y sumalo al carrito. El precio lo calcula el servidor.</p>
+
+  <form id="armador" class="card" novalidate>
+    <div id="pasos"></div>
+    <p class="error oculto" id="error"></p>
+    <button type="submit" class="btn full" style="margin-top:1rem">Agregar al carrito</button>
+  </form>
+</main>
+
+<script type="module" src="js/armar.js"></script>
+</body>
+</html>

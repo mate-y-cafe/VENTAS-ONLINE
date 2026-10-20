@@ -1,0 +1,36 @@
+{
+  "_nota": "PROVISORIO: opciones tomadas del armador de index.html. Reemplazar por los datos reales de la etapa 1.",
+  "pasos": [
+    {
+      "id": "mate",
+      "titulo": "Elegí tu mate",
+      "opciones": [
+        { "id": "mate-algarrobo", "nombre": "Mate Imperial de Algarrobo", "precio": 18500 },
+        { "id": "mate-torpedo-calabaza", "nombre": "Mate Torpedo Calabaza", "precio": 12000 }
+      ]
+    },
+    {
+      "id": "bombilla",
+      "titulo": "Elegí tu bombilla",
+      "opciones": [
+        { "id": "bombilla-alpaca", "nombre": "Bombilla Alpaca", "precio": 7300 },
+        { "id": "bombilla-acero", "nombre": "Bombilla Acero", "precio": 5500 }
+      ]
+    },
+    {
+      "id": "yerba",
+      "titulo": "Elegí tu yerba",
+      "opciones": [
+        { "id": "yerba-organica-suave", "nombre": "Yerba Orgánica Suave", "precio": 4200 },
+        { "id": "yerba-serranas", "nombre": "Yerba Hierbas Serranas", "precio": 4100 }
+      ]
+    },
+    {
+      "id": "extras",
+      "titulo": "Sumá extras",
+      "opciones": [
+        { "id": "acc-termo", "nombre": "Termo Acero Inoxidable 1L", "precio": 22900 }
+      ]
+    }
+  ]
+}

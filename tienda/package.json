@@ -1,0 +1,9 @@
+{
+  "name": "tienda-mate-cafe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/precios.test.js test/stock.test.js"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu carrito | MATE & CAFÉ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="../index.html">MATE & CAFÉ</a>
+  <a href="index.html">Seguir comprando</a>
+</header>
+
+<main class="wrap">
+  <h1>Tu carrito</h1>
+
+  <section id="vacio" class="card oculto">
+    <p>Tu carrito está vacío.</p>
+    <a class="btn" href="index.html">Ver la tienda</a>
+  </section>
+
+  <section id="contenido" class="oculto">
+    <div class="card" id="lineas"></div>
+
+    <div class="card">
+      <h2 style="font-size:1.1rem">¿Cómo lo querés recibir?</h2>
+      <div class="opciones">
+        <label class="opcion"><input type="radio" name="entrega" value="envio" checked> Envío a domicilio</label>
+        <label class="opcion"><input type="radio" name="entrega" value="retiro"> Retiro en el local</label>
+      </div>
+      <p class="nota" id="aviso-envio"></p>
+    </div>
+
+    <div class="card resumen">
+      <dl>
+        <dt>Subtotal</dt><dd id="subtotal">$0</dd>
+        <dt>Envío</dt><dd id="envio">$0</dd>
+        <dt class="total">Total</dt><dd class="total" id="total">$0</dd>
+      </dl>
+      <p class="nota" id="aviso-transferencia"></p>
+      <p class="error oculto" id="error-stock">Hay productos sin stock suficiente. Quitalos o bajá la cantidad para seguir.</p>
+      <p class="error oculto" id="error-general"></p>
+      <button type="button" class="btn full" id="seguir">Seguir con la compra</button>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="js/carrito-pagina.js"></script>
+</body>
+</html>
